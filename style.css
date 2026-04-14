@@ -13,13 +13,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;   /* ✅ change this */
+    padding: 20px;       /* ✅ add this */
     color: white;
 }
 
 /* Container (Glass Effect) */
 .container {
-    width: 420px;
+    width: 100%;
+    max-width: 420px;
     padding: 25px;
     border-radius: 20px;
     backdrop-filter: blur(15px);
